@@ -16,6 +16,8 @@ def send_welcome(message):
 def echo_all(message):
 	bot.reply_to(message, message.text)
 
+
+
 @bot.message_handler(content_types=['photo'])
 def clear_background(m):
 	file_path = bot.get_file(m.photo[-1].file_id).file_path
